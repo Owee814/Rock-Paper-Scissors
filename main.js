@@ -4,7 +4,19 @@ var scissors = document.querySelector(".scissors");
 var otherAnswer = document.querySelector(".other-answer");
 var playerAnswer = document.querySelector(".player-answer");
 var winLose = document.querySelector(".win-lose");
-let answers = ["Rock", "Paper", "Scissors"];
+
+function makeOtherAnswer() {
+    let answerNumber = Math.floor(Math.random() * 3) + 1;
+    if (answerNumber == 1) {
+        otherAnswer.textContent = "Rock";
+    }
+    else if (answerNumber == 2) {
+        otherAnswer.textContent = "Paper";
+    }
+    else if (answerNumber == 3) {
+        otherAnswer.textContent = "Scissors";
+    };
+};
 
 if (rock) {
     rock.addEventListener("click", function() {
