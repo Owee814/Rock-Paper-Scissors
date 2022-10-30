@@ -1,0 +1,20 @@
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.rock {
+    background-image: url(Rock.png);
+    background-size: contain;
+}
+
+.paper {
+    background-image: url(Paper.png);
+    background-size: contain;
+}
+
+.scissors {
+    background-image: url(Scissors.png);
+    background-size: contain;
+}
