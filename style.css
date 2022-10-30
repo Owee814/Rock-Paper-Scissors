@@ -18,3 +18,18 @@ button {
     background-image: url(Scissors.png);
     background-size: contain;
 }
+
+.player-answer {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.other-answer {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.win-lose {
+    font-size: 50px;
+    font-weight: bold;
+}
