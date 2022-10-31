@@ -57,12 +57,12 @@ function choseWinner() {
     }
     else if(yourAnswer == "Scissors" && computerAnswer == "Scissors") {
         winLose.textContent = "TIE!";
-        ties++
+        ties++;
     };
 
-    winsPercent.textContent = "Wins: " + roundUpNearest10(wins/(wins+ties+losses) * 100) + "%";
-    tiesPercent.textContent = "Ties: " + roundUpNearest10(ties/(wins+ties+losses) * 100) + "%";
-    lossesPercent.textContent = "Losses: " + roundUpNearest10(losses/(wins+ties+losses) * 100) + "%";
+    winsPercent.textContent = "Wins: " + roundUpNearest10(wins/(wins+ties+losses) * 100).toString() + "%";
+    tiesPercent.textContent = "Ties: " + roundUpNearest10(ties/(wins+ties+losses) * 100).toString() + "%";
+    lossesPercent.textContent = "Losses: " + roundUpNearest10(losses/(wins+ties+losses) * 100).toString() + "%";
 };
 
 function makeOtherAnswer() {
