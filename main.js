@@ -6,6 +6,10 @@ var otherAnswer = document.querySelector(".other-answer");
 var playerAnswer = document.querySelector(".player-answer");
 var winLose = document.querySelector(".win-lose");
 
+var winsPercent = document.querySelector(".wins-percent");
+var tiesPercent = document.querySelector(".ties-percent");
+var lossesPercent = document.querySelector(".losses-percent");
+
 let wins = 0;
 let ties = 0;
 let losses = 0;
@@ -13,6 +17,10 @@ let totalRuns = 0;
 
 let yourAnswer = "";
 let computerAnswer = "";
+
+function roundUpNearest10(num) {
+    return Math.ceil(num / 0.1) * 0.1;
+};
 
 function choseWinner() {
     if (yourAnswer == "Rock" && computerAnswer == "Rock") {
@@ -51,6 +59,10 @@ function choseWinner() {
         winLose.textContent = "TIE!"
         ties++
     };
+
+    winsPercent.textContent = "Wins: " + roundUpNearest10(wins/(wins+ties+losses) * 100) + "%";
+    tiesPercent.textContent = "Ties: " + roundUpNearest10(ties/(wins+ties+losses) * 100) + "%";
+    lossesPercent.textContent = "Losses: " + roundUpNearest10(losses/(wins+ties+losses) * 100) + "%";
 };
 
 function makeOtherAnswer() {
