@@ -24,39 +24,39 @@ function roundUpNearest10(num) {
 
 function choseWinner() {
     if (yourAnswer == "Rock" && computerAnswer == "Rock") {
-        winLose.textContent = "TIE!"
-        ties++
+        winLose.textContent = "TIE!";
+        ties++;
     }
     else if(yourAnswer == "Rock" && computerAnswer == "Paper") {
-        winLose.textContent = "LOSER!"
-        losses++
+        winLose.textContent = "LOSER!";
+        losses++;
     }
     else if(yourAnswer == "Rock" && computerAnswer == "Scissors") {
-        winLose.textContent = "WINNER!"
-        wins++
+        winLose.textContent = "WINNER!";
+        wins++;
     }
     else if(yourAnswer == "Paper" && computerAnswer == "Rock") {
-        winLose.textContent = "WINNER!"
-        wins++
+        winLose.textContent = "WINNER!";
+        wins++;
     }
     else if(yourAnswer == "Paper" && computerAnswer == "Paper") {
-        winLose.textContent = "TIE!"
-        ties++
+        winLose.textContent = "TIE!";
+        ties++;
     }
     else if(yourAnswer == "Paper" && computerAnswer == "Scissors") {
-        winLose.textContent = "LOSER!"
-        losses++
+        winLose.textContent = "LOSER!";
+        losses++;
     }
     else if(yourAnswer == "Scissors" && computerAnswer == "Rock") {
-        winLose.textContent = "LOSER!"
-        losses++
+        winLose.textContent = "LOSER!";
+        losses++;
     }
     else if(yourAnswer == "Scissors" && computerAnswer == "Paper") {
-        winLose.textContent = "WINNER!"
-        wins++
+        winLose.textContent = "WINNER!";
+        wins++;
     }
     else if(yourAnswer == "Scissors" && computerAnswer == "Scissors") {
-        winLose.textContent = "TIE!"
+        winLose.textContent = "TIE!";
         ties++
     };
 
@@ -88,7 +88,7 @@ if (rock) {
         playerAnswer.textContent = "You: Rock";
         yourAnswer = "Rock";
         makeOtherAnswer();
-        totalRuns++
+        totalRuns++;
     });
 };
 
@@ -97,7 +97,7 @@ if (paper) {
         playerAnswer.textContent = "You: Paper";
         yourAnswer = "Paper";
         makeOtherAnswer();
-        totalRuns++
+        totalRuns++;
     });
 };
 
@@ -106,6 +106,6 @@ if (scissors) {
         playerAnswer.textContent = "You: Scissors";
         yourAnswer = "Scissors";
         makeOtherAnswer();
-        totalRuns++
+        totalRuns++;
     });
 };
